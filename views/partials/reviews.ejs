@@ -1,0 +1,40 @@
+<div style="height: 500px; margin: auto; max-width: 1920px;">
+  <h4 style="text-align: center; margin-top: 3rem;">Отзывы:</h4>
+
+  <div class="row mb-2" style="width: 100%; height: auto;">
+
+    <% for (var i = 0; i < reviews.length; i++) { %>
+
+      <!-- CREATING A BLOCK WITH REVIEW IN A LOOP -->
+      <div class="col-sm review md-6">
+        
+        <!-- THE RATING MAYBE -->
+
+        <!-- The review -->
+        <div class="container" style="text-align: center; height: 320px;"><p class="p-0 md-4"><%= JSON.parse(JSON.stringify(reviews[i].review)) %></p></div><br>
+
+        <!-- Printing the name of reviewer -->
+        <div class="d-flex justify-content-end"><h6><%= JSON.parse(JSON.stringify(reviews[i].name)) %></h6></div>
+
+        <!-- The date from review -->
+        <div class="d-flex justify-content-end"><small><%= JSON.parse(JSON.stringify(reviews[i].date)) %></small></div>
+        
+      </div>
+
+    <% } %>
+  </div>
+</div>
+
+
+<!-- REVEALING THE BLOCK OF REVIEWS (JQUERY ANIMATION) -->
+<!-- <script>
+  $(document).ready(function(){
+    setInterval(blinkDiv, 7000)
+    function blinkDiv() {
+      if ($('.review').is(':visible')) {
+        $('.review').fadeToggle(500);
+        $('.review').fadeToggle(300)
+     };
+    }
+  }); 
+</script> -->

@@ -1,0 +1,37 @@
+<div class="row mb-2" id="contact" style="max-width: 1100px; margin: auto; padding-top: 3rem;">
+  <!-- Contacts -->
+  <div class="col md-6 container" style="justify-content: center;">
+
+    <!-- Our salons -->
+    <div>
+      <p class="h4">Наши магазины в Туле:</p>  
+
+      <!-- SYNTAX FOR ARRAYS -->
+      <% for(var i = 0; i < stores.length; i++) { %>
+        <p>
+          <a class="dropdown-toggle text-dark lined" data-toggle="collapse" href="#multiCollapseExample_<%= i %>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="font: bold; text-decoration: none;"><%= stores[i][0] %></a>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample_<%= i %>">
+              <div class="text-left">
+                <div class="text-left p-0">Позвонить</div>
+                <% for(var k = 0; k < stores[i][1].length; k++) { %>
+                <p><img src="/icons/callPhone.png" alt="Phone picture" style="width: 28px; height: 22px;"><a class="text-dark" href="#"><%= stores[i][1][k] %></a></p>
+                <% } %>
+                <p><a href="#">Показать на карте</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% } %>
+    </div>
+  </div>
+  
+  <!-- Map -->
+  <div class="col md-6" style="max-width: 1000px; max-height: 460px; position: relative;">
+    <!-- position is to make stable -->
+    <div style="position: relative;" id="map"><a href="https://yandex.ru/maps/org/mir_optiki/1129261911/?utm_medium=mapframe&utm_source=maps"></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMRMGOcC" width="760" height="500" allowfullscreen="true" style="border: none;"></iframe></div>
+  </div>
+</div>

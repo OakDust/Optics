@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+}
+
+a.lined:hover {
+  border-bottom: solid 2px;
+  border-color: rgb(50, 50, 63);
+}
+
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgb(50, 50, 63);
+  box-shadow: 0 1px 0 0 rgb(50, 50, 63);
+}
+.active-amber-textarea.md-form label.active {
+  color: rgb(50, 50, 63);
+}
+.active-amber-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: rgb(50, 50, 63);
+}
+
+.framed {
+  border-color: rgb(50, 50, 63);
+  border-top: solid 2px;
+}
+
+#inputs > div > input {
+  border: none;
+  border-bottom: solid 2px;
+  width: 320px;
+}
+
+#inputs > div > input:focus {
+  border: none;
+  border-bottom: solid 2px;
+}
+
+html {
+  font-size: 1rem;
+}

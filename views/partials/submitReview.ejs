@@ -1,0 +1,26 @@
+<div style="margin-bottom: 2rem; width: 100%;">
+  
+  <form action="/" method="POST">
+    <div id="inputs">
+      <div class="container"><h4>Оставить отзыв:</h4></div><br>
+      <div class="container">
+        <input type="text" class="form-control" name="email" placeholder="Email" required>
+        <small class="text-muted">Ваш Email не виден посетителям страницы.</small>
+      </div><br>
+
+      <div class="container">
+        <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+        <small class="text-muted">Ваше имя будет видно всем посетителям страницы.</small>
+      </div><br>
+
+      <!--Material textarea-->
+      <div class="container">
+        <div class="md-form amber-textarea active-amber-textarea">
+          <textarea id="submitReview" class="md-textarea form-control" rows="3" placeholder="Ваш отзыв" name="review" style="border-bottom: solid 2px; width: 550px; height: 180px;" required></textarea>
+        </div><br>
+
+        <input class="btn btn-dark" type="submit" value="Отправить">
+      </div>
+    </div>
+  </form>
+</div>

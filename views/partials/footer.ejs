@@ -1,0 +1,56 @@
+<footer class="bg-dark text-white text-left text-lg-start">
+  <div class="container p-2">
+    <div class="row">
+      <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+        <h5 style="text-align: left;">О сервисах</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#promotions" class="text-white">Акции</a></li>
+          <li><a href="#" class="text-white">Бренды</a></li>
+          <li><a href="#!" class="text-white">Отзывы</a></li>
+        </ul>
+      </div>
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Контакты</h5>
+        <ul class="list-unstyled grid mb-0">
+          <li><a href="#!" class="text-white">testemail@tularegion.ru</a></li>
+          <li><a href="#!" class="text-white">+7(4872)84290</a></li>
+          <li><a href="#!" class="text-white">+7(4872)59041</a></li>
+        </ul>
+      </div>
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Адреса оптик</h5>
+        <ul class="list-unstyled mb-0">
+          <% for (var i = 0; i < stores.length; i++) { %>
+            <li><a href="#contact" class="text-white"><%= stores[i][0] %></a></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Справка</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#!" class="text-white">Частые вопросы</a></li>
+          <li><a href="#" class="text-white">Устройство на работу</a></li>
+          <li><a href="#" class="text-white">Сотрудники</a></li>
+          <li><a href="#" class="text-white">Запись к врачу-офтальмологу</a></li>
+             
+        </ul>
+      </div>
+    </div>
+
+    
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="http://localhost:9000">miroptikitula.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>

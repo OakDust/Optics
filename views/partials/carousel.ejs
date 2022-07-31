@@ -1,0 +1,42 @@
+<div style="width: 100%; height: auto;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+
+  <!-- BETTER CHOOSE 16:9 IMAGES or 1600x630 -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="width: 100%; height: auto;">
+        <img class="d-block w-80 img-fluid" src="/images/carousel/carousel_1.jpeg" alt="First slide" style="width: 1600px; height: 630px;">
+      </div>
+      <div class="carousel-item" style="width: 100%; height: auto;">
+        <img class="d-block w-80 img-fluid" src="/images/carousel/carousel_2.jpeg" alt="Second slide" style="width: 1600px; height: 630px;">
+      </div>
+      <div class="carousel-item" style="width: 100%; height: auto;">
+        <img class="d-block w-80 img-fluid" src="/images/carousel/carousel_3.jpg" alt="Third slide" style="width: 1600px; height: 630px;">
+      </div>
+      <div class="carousel-item" style="width: 100%; height: auto;">
+        <img class="d-block w-80 img-fluid" src="/images/carousel/carousel_4.webp" alt="Fourth slide" style="width: 1600px; height: 630px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- Cut from bootstrap carousel -->
+<script>
+  $('.carousel').carousel({
+    interval: 3000,
+    pause: false
+  })
+</script>

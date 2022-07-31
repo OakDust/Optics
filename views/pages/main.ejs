@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+<body>
+  <!-- HEADER -->
+  <%- include('../partials/header'); %>
+
+  <!-- CAROUSEL -->
+  <%- include('../partials/carousel'); %>
+  
+
+  <!-- ABOUT COMPANY -->
+  <div class="row mb-2" style="text-align: center; max-width: 1100px; margin: auto; padding-top: 3rem;">
+    <div class="col md-6">
+      <main class="px-3">
+        <div class="container" style="justify-content: center;">
+          <h1>
+            Добро пожаловать в <br/>
+            Мир оптики
+          </h1>
+        </div>
+        <p class="lead">Сеть магазинов ООО "Мир оптики" на тульском рынке успешно
+           работает уже более 20 лет и сумела завоевать доверие и уважение постоянных клиентов.
+            В компании предоставляются услуги лицензированных квалифицированных врачей-офтальмологов: 
+            если вам нужен хороший детский офтальмолог в Туле, или же вы просто хотите срочно купить 
+          контактные линзы по пути на работу - вам всегда окажут оперативную и квалифицированную помощь.
+        </p>
+        <p class="lead">
+          <a class="btn btn-lg btn-dark fw-bold border-dark bg-dark" href="/about">Подробнее</a>
+        </p>
+      </main>
+    </div>
+
+    <div class="col md-6">
+      <div style="background-color: rgb(24, 15, 48); width: 350px; height: 420px; margin: auto;"></div>
+    </div>
+  </div>
+
+  <!-- LOGO -->
+  <div class="d-flex justify-content-center" style="margin-top: 5rem; margin-bottom: 5rem;">
+    <img src="/icons/favicon-32x32.png" alt="Logo" style="width: 39px; height: 39px;">
+  </div>
+
+  <!-- PROMOTIONS -->
+  <div class="container">
+    <h4 class="d-flex justify-content-center">Акции:</h4>
+    <div class="row mb-2">
+      <div class="col md-6" style="background-color: rgb(40, 68, 68);  width: 350px; height: 360px;"></div>
+      <div class="col md-6" style="background-color: rgb(68, 42, 68);  width: 350px; height: 360px;"></div>
+      <div class="col md-6" style="background-color: rgb(122, 106, 65);  width: 350px; height: 360px;"></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div></div>
+  
+  <!-- REVIEWS -->
+  <%- include('../partials/reviews'); %>
+
+  <!-- CONTACTS -->
+  <%- include('../partials/contact'); %>
+
+  <!-- Banner -->
+  <hr size="8" width="60%"  style="margin-top: 6rem; margin-bottom: 6rem; color: rgb(50, 50, 63); background-color: rgb(50, 50, 63); color: rgb(50, 50, 63);"> 
+  
+  <!-- SUBMIT A REVIEW -->
+  <%- include('../partials/submitReview'); %>  
+
+  <!-- FOOTER -->
+  <%- include('../partials/footer'); %>
+
+</body>
+</html>
